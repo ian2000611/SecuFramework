@@ -1,0 +1,43 @@
+{
+  "name": "SecuFramework",
+  "version": "0.0.0",
+  "description": "A framework similar to hoodie that preforms validation based on the data models you specifiy",
+  "main": "backend/server.js",
+  "scripts": {
+    "prepublish": "mkdir build; ./node_modules/.bin/uglifyjs -o build/jjv.min.js lib/jjv.js",
+    "pretest": "./node_modules/.bin/jshint -e 'js,json' ./lib ./test",
+    "test": "./node_modules/.bin/mocha -b -R spec ./test"
+  },
+  "keywords": [
+    "framework",
+    "server",
+    "gui",
+    "frontend",
+    "backend",
+    "database",
+    "db"
+  ],
+  "author": "Ian Patterson",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.13.0",
+    "uglify-js": "~2.4.0",
+    "jshint": "~2.3.0"
+  },
+  "dependencies": {
+	  "jjv": "~1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ian2000611/SecuFramework.git",
+    "web": "https://github.com/ian2000611/SecuFramework"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/ian2000611/SecuFramework/master/LICENSE"
+    }
+  ]
+
+}

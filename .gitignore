@@ -1,3 +1,7 @@
+#vim backups and swaps
+**/*~
+**/*.swp
+
 # Logs
 logs
 *.log
